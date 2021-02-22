@@ -1,0 +1,100 @@
+CREATE TABLE `library_management_trial`.`books` (
+  `Book_id` INT NOT NULL,
+  `Book_name` VARCHAR(45) NOT NULL,
+  `Book_author` VARCHAR(45) NOT NULL,
+  PRIMARY KEY (`Book_id`));
+
+
+
+
+
+CREATE TABLE `library_management_trial`.`users_auth` (
+  `user_id` INT NOT NULL,
+  `user_name` VARCHAR(45) NOT NULL,
+  `user_mail_id` VARCHAR(45) NOT NULL,
+  `password` VARCHAR(45) NOT NULL,
+  `is_admin_flag` VARCHAR(45) NOT NULL,
+  PRIMARY KEY (`user_id`),
+  UNIQUE INDEX `user_mail_id_UNIQUE` (`user_mail_id` ASC) VISIBLE);
+
+
+
+CREATE TABLE `library_management_trial`.`user_transaction` (
+  `user_id` INT NOT NULL,
+  `book_id` INT NOT NULL,
+  `book_recieved` DATE NOT NULL,
+  INDEX `Book_id_idx` (`book_id` ASC) VISIBLE,
+  CONSTRAINT `user_id`
+    FOREIGN KEY (`user_id`)
+    REFERENCES `library_management_trial`.`users_auth` (`user_id`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION,
+  CONSTRAINT `Book_id`
+    FOREIGN KEY (`book_id`)
+    REFERENCES `library_management_trial`.`books` (`Book_id`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION);
+
+
+INSERT INTO `library_management_trial`.`users_auth` (`user_id`, `user_name`, `user_mail_id`, `password`, `is_admin_flag`) VALUES ('20200', 'Sai', 'sai@gmail.com', 'SaiCharan@123', '0');
+INSERT INTO `library_management_trial`.`users_auth` (`user_id`, `user_name`, `user_mail_id`, `password`, `is_admin_flag`) VALUES ('20201', 'Kiran', 'kiran@gmail.com', 'Kiran@74185', '0');
+INSERT INTO `library_management_trial`.`users_auth` (`user_id`, `user_name`, `user_mail_id`, `password`, `is_admin_flag`) VALUES ('20202', 'Tharun', 'tharun@gmail.com', 'Tharun@78945', '0');
+INSERT INTO `library_management_trial`.`users_auth` (`user_id`, `user_name`, `user_mail_id`, `password`, `is_admin_flag`) VALUES ('20203', 'Pavan', 'pavan@gmail.com', 'Pavan@45632', '0');
+INSERT INTO `library_management_trial`.`users_auth` (`user_id`, `user_name`, `user_mail_id`, `password`, `is_admin_flag`) VALUES ('20204', 'Sita', 'sita@gmail.com', 'Sita741256@', '0');
+
+
+
+INSERT INTO `library_management_trial`.`books` (`Book_id`, `Book_name`, `Book_author`) VALUES ('100', 'Python', 'Geudo');
+INSERT INTO `library_management_trial`.`books` (`Book_id`, `Book_name`, `Book_author`) VALUES ('101', 'Python_advanced', 'Geudo');
+INSERT INTO `library_management_trial`.`books` (`Book_id`, `Book_name`, `Book_author`) VALUES ('102', 'Python_deeplearning', 'Mark Lutz');
+INSERT INTO `library_management_trial`.`books` (`Book_id`, `Book_name`, `Book_author`) VALUES ('103', 'Python cook book', 'Brian');
+INSERT INTO `library_management_trial`.`books` (`Book_id`, `Book_name`, `Book_author`) VALUES ('104', 'Learn python the heard way', 'Zed shaw');
+INSERT INTO `library_management_trial`.`books` (`Book_id`, `Book_name`, `Book_author`) VALUES ('105', 'Automate Boring statement', 'AI sweigart');
+
+
+INSERT INTO `library_management_trial`.`user_transaction`
+(`user_id`,
+`book_id`,
+`book_recieved`)
+VALUES
+(20201,101,'2021-02-04');
+
+
+INSERT INTO `library_management_trial`.`user_transaction`
+(`user_id`,
+`book_id`,
+`book_recieved`)
+VALUES
+(20200,
+100,
+'2021-02-20');
+
+
+INSERT INTO `library_management_trial`.`user_transaction`
+(`user_id`,
+`book_id`,
+`book_recieved`)
+VALUES
+(20204,105,'2021-02-09');
+
+
+
+INSERT INTO `library_management_trial`.`user_transaction`
+(`user_id`,
+`book_id`,
+`book_recieved`)
+VALUES
+(20203,103,'2021-02-24');
+
+
+INSERT INTO `library_management_trial`.`user_transaction`
+(`user_id`,
+`book_id`,
+`book_recieved`)
+VALUES
+(20203,105,'2021-02-21');
+
+
+
+
+
