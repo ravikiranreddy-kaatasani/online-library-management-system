@@ -1,0 +1,24 @@
+CREATE TABLE `users` (
+  `user_id` int(11) NOT NULL,
+  `user_name` varchar(45) NOT NULL,
+  `user_mail_id` varchar(45) NOT NULL,
+  `password` varchar(45) NOT NULL,
+  `is_admin_flag` varchar(45) NOT NULL,
+  `total_fine` int(3) unsigned zerofill NOT NULL,
+  `total_books_taken` int(1) unsigned zerofill NOT NULL,
+  PRIMARY KEY (`user_id`),
+  UNIQUE KEY `user_mail_id_UNIQUE` (`user_mail_id`)
+) 
+
+
+/*
+-- Query: SELECT * FROM library_management_trial.users
+LIMIT 0, 1000
+
+-- Date: 2021-02-23 18:24
+*/
+INSERT INTO `users` (`user_id`,`user_name`,`user_mail_id`,`password`,`is_admin_flag`,`total_fine`,`total_books_taken`) VALUES (20200,'Sai','sai@gmail.com','SaiCharan@123','0',000,0);
+INSERT INTO `users` (`user_id`,`user_name`,`user_mail_id`,`password`,`is_admin_flag`,`total_fine`,`total_books_taken`) VALUES (20201,'Kiran','kiran@gmail.com','Kiran@74185','1',000,2);
+INSERT INTO `users` (`user_id`,`user_name`,`user_mail_id`,`password`,`is_admin_flag`,`total_fine`,`total_books_taken`) VALUES (20202,'Tharun','tharun@gmail.com','Tharun@78945','0',000,1);
+INSERT INTO `users` (`user_id`,`user_name`,`user_mail_id`,`password`,`is_admin_flag`,`total_fine`,`total_books_taken`) VALUES (20203,'Pavan','pavan@gmail.com','Pavan@45632','0',000,3);
+INSERT INTO `users` (`user_id`,`user_name`,`user_mail_id`,`password`,`is_admin_flag`,`total_fine`,`total_books_taken`) VALUES (20204,'Sita','sita@gmail.com','Sita741256@','0',000,1);
