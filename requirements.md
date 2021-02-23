@@ -2,6 +2,8 @@ Channa and yasaswi
 
 User Information -> UserId,UserName,BookId,BookName,BookAuthor
                  -> fineDue,No of books taken ,no of books returned date
+                 -> 
+                 
                 
 satish and mallika ->
 
@@ -12,7 +14,7 @@ db ->  list of books(bookname, authorname, num of books,bookid ),
 addbooks and delete books
 subhan and ravi
 
-db -> bookid,bookname,bookauthor
+db -> bookid,bookname,bookauthor count of books
 
 anvita and shivani
  fine calc
