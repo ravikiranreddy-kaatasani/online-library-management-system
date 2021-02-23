@@ -1,11 +1,11 @@
-Channa and yasaswi
+Channa and yasaswi ADMIN  
 
 User Information -> UserId,UserName,BookId,BookName,BookAuthor
                  -> fineDue,No of books taken ,no of books returned date
                  -> 
                  
                 
-satish and mallika ->
+satish and mallika -> USER
 
 db ->  list of books(bookname, authorname, num of books,bookid ),
    -> no of books taken by user , getbookreq, list ,admin email ,
