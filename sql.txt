@@ -1,9 +1,13 @@
-CREATE TABLE `library_management_trial`.`books` (
-  `Book_id` INT NOT NULL,
-  `Book_name` VARCHAR(45) NOT NULL,
-  `Book_author` VARCHAR(45) NOT NULL,
-  PRIMARY KEY (`Book_id`));
 
+# books Table updated
+
+CREATE TABLE `books` (
+  `Book_id` int(11) NOT NULL,
+  `Book_name` varchar(45) NOT NULL,
+  `Book_author` varchar(45) NOT NULL,
+  `Genre` varchar(45) NOT NULL,
+  PRIMARY KEY (`Book_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci
 
 
 
@@ -93,6 +97,8 @@ INSERT INTO `library_management_trial`.`user_transaction`
 `book_recieved`)
 VALUES
 (20203,105,'2021-02-21');
+
+
 
 
 
