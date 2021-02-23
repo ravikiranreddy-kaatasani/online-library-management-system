@@ -11,12 +11,7 @@ CREATE TABLE `users` (
 ) 
 
 
-/*
--- Query: SELECT * FROM library_management_trial.users
-LIMIT 0, 1000
 
--- Date: 2021-02-23 18:24
-*/
 INSERT INTO `users` (`user_id`,`user_name`,`user_mail_id`,`password`,`is_admin_flag`,`total_fine`,`total_books_taken`) VALUES (20200,'Sai','sai@gmail.com','SaiCharan@123','0',000,0);
 INSERT INTO `users` (`user_id`,`user_name`,`user_mail_id`,`password`,`is_admin_flag`,`total_fine`,`total_books_taken`) VALUES (20201,'Kiran','kiran@gmail.com','Kiran@74185','1',000,2);
 INSERT INTO `users` (`user_id`,`user_name`,`user_mail_id`,`password`,`is_admin_flag`,`total_fine`,`total_books_taken`) VALUES (20202,'Tharun','tharun@gmail.com','Tharun@78945','0',000,1);
