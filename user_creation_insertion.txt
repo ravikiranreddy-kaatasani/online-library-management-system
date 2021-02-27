@@ -1,3 +1,7 @@
+
+// ask us before doing
+
+
 CREATE TABLE `users` (
   `user_id` int(11) NOT NULL,
   `user_name` varchar(45) NOT NULL,
@@ -8,6 +12,20 @@ CREATE TABLE `users` (
   `total_books_taken` int(1) unsigned zerofill NOT NULL,
   PRIMARY KEY (`user_id`),
   UNIQUE KEY `user_mail_id_UNIQUE` (`user_mail_id`)
+) 
+// ask us before doing
+
+
+CREATE TABLE `user_tt` (
+  `user_id` int(11) NOT NULL AUTO_INCREMENT,
+  `user_name` varchar(45) NOT NULL,
+  `user_mail_id` varchar(45) NOT NULL,
+  `password` varchar(45) NOT NULL,
+  `is_admin_flag` int(1) NOT NULL DEFAULT '0',
+  `total_fine` int(3) NOT NULL DEFAULT '0',
+  `total_books_taken` int(1) NOT NULL DEFAULT '0',
+  PRIMARY KEY (`user_id`),
+  UNIQUE KEY `user_id_UNIQUE` (`user_id`)
 ) 
 
 
