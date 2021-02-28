@@ -14,7 +14,7 @@ def user_signup(user_name,user_mail,password):
         print('user already exists')
     else:
 
-        if fullmatch("(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!#%*?&]{8,20}",pswd):
+        if fullmatch("(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!#%*?&]{8,20}",password):
             encoded_pwd = base64.b64encode(password.encode('ascii'))
             cursor.execute("insert into user_tt (user_name,user_mail_id,password) values(%s,%s,%s)",(user_name,user_mail,encoded_pwd))
             mydb.commit()
