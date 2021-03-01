@@ -2,7 +2,7 @@ import pymysql
 import base64
 import re
 
-mydb = pymysql.connect(host='localhost', user='root', password='root', database='library_mgmt')
+mydb = pymysql.connect(host='localhost', user='root', password='root', database='library_management_trail')
 cursor = mydb.cursor()
 
 admin_name = input('enter user name ').strip()
@@ -17,7 +17,7 @@ def check(mail):
 
 def user_signup(admin_name, admin_mail, password):
     try:
-        if cursor.execute("select user_mail_id from users where user_mail_id =%s;", (admin_mail)) == 1:
+        if cursor.execute("select user_mail_id from user_tt where user_mail_id =%s;", (admin_mail)) == 1:
             print('user already exists')
         else:
             if check(admin_mail):
