@@ -2,7 +2,7 @@ import pymysql
 import base64
 import re
 
-mydb=pymysql.connect(host='localhost',user='root',password='root',database='library_mgmt')
+mydb=pymysql.connect(host='localhost',user='root',password='root',database='library_management_trail')
 cursor=mydb.cursor()
 
 admin_mail= input('enter admin mail ')
