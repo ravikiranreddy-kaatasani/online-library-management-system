@@ -23,7 +23,7 @@ def forget_password():
  
     s.starttls() 
 
-    s.login("srustith@gmail.com", "9550007821@Sr") 
+    s.login("srustith@gmail.com", input('enter password')) 
       
     message = otp
       
