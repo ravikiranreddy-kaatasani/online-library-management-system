@@ -1,0 +1,11 @@
+INSERT INTO `user` (`user_id`,`user_name`,`mail_id`,`password`,`is_admin_flag`,`total_fine`,`number_of_books_taken`) VALUES ('ojas1',`anvita`,`anvita1@gmail.com`,`P@ss123pass`,0,5,0);
+INSERT INTO `user` (`user_id`,`user_name`,`mail_id`,`password`,`is_admin_flag`,`total_fine`,`number_of_books_taken`) VALUES ('ojas10','sitaramarao','sitaramarao1@gmail.com','P@ss123pass',0,0,0);
+INSERT INTO `user` (`user_id`,`user_name`,`mail_id`,`password`,`is_admin_flag`,`total_fine`,`number_of_books_taken`) VALUES ('ojas11','pratyusha','pratyusha1@gmail.com','P@ss123pass',0,0,0);
+INSERT INTO `user` (`user_id`,`user_name`,`mail_id`,`password`,`is_admin_flag`,`total_fine`,`number_of_books_taken`) VALUES ('ojas2','srustith','srustith1@gmail.com','P@ss123pass',1,0,0);
+INSERT INTO `user` (`user_id`,`user_name`,`mail_id`,`password`,`is_admin_flag`,`total_fine`,`number_of_books_taken`) VALUES ('ojas3','mallika','mallika1@gmail.com','P@ss123pass',0,0,0);
+INSERT INTO `user` (`user_id`,`user_name`,`mail_id`,`password`,`is_admin_flag`,`total_fine`,`number_of_books_taken`) VALUES ('ojas4','yasaswi','yasaswi1@gmail.com','P@ss123pass',0,0,0);
+INSERT INTO `user` (`user_id`,`user_name`,`mail_id`,`password`,`is_admin_flag`,`total_fine`,`number_of_books_taken`) VALUES ('ojas5','kiran','kiran1@gmail.com','P@ss123pass',1,0,0);
+INSERT INTO `user` (`user_id`,`user_name`,`mail_id`,`password`,`is_admin_flag`,`total_fine`,`number_of_books_taken`) VALUES ('ojas6','chennakesava','chennakesava1@gmail.com','P@ss123pass',0,0,0);
+INSERT INTO `user` (`user_id`,`user_name`,`mail_id`,`password`,`is_admin_flag`,`total_fine`,`number_of_books_taken`) VALUES ('ojas7','subhan','subhan1@gmail.com','P@ss123pass',0,0,0);
+INSERT INTO `user` (`user_id`,`user_name`,`mail_id`,`password`,`is_admin_flag`,`total_fine`,`number_of_books_taken`) VALUES ('ojas8','satish','satish1@gmail.com','P@ss123pass',0,0,0);
+INSERT INTO `user` (`user_id`,`user_name`,`mail_id`,`password`,`is_admin_flag`,`total_fine`,`number_of_books_taken`) VALUES ('ojas9','shivani','shivani1@gmail.com','P@ss123pass',0,0,0);

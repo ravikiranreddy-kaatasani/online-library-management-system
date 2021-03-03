@@ -1,0 +1,1 @@
+INSERT INTO `user_book_taken` (`user_id`,`book_id`,`mail_id`,`user_name`,`book_name`,`book_author`,`genre`,`issue_date`,`actual_return_date`,`user_return_date`,`fine`) VALUES ('ojas1',106,'anvitha1@gmail.com','anvita','History of England, Foundation','Ackroyd, Peter','history','2021-02-01','2021-02-15','2021-02-16',5);
