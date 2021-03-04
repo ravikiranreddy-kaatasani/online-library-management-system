@@ -1,4 +1,3 @@
-
 INSERT INTO `book` (`book_id`,`book_name`,`book_author`,`genre`,`number_of_copies`) VALUES (106,'History of England','Ackroyd','history',1);
 INSERT INTO `book` (`book_id`,`book_name`,`book_author`,`genre`,`number_of_copies`) VALUES (107,'Artist and the Mathematician','Aczel','science',1);
 INSERT INTO `book` (`book_id`,`book_name`,`book_author`,`genre`,`number_of_copies`) VALUES (108,'False Impressions','Archer','fiction',1);
