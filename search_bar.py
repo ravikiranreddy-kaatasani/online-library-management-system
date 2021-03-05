@@ -89,11 +89,9 @@ def search_bar_user_or_book(searchfor):
         finally:
             mydb.close()
 
-search_no=0
 while True:
     searchfor = input("enter your search option:\n search for books :book\t to search for users\t:user\tenter (q,quit) to quit: \nenter here search type by \t:")
     searchfor=searchfor.lower()
-    search_no=search_no+1
     if searchfor == 'book' or searchfor == 'user':
         search_bar_user_or_book(searchfor)
     elif searchfor == 'quit' or searchfor == 'q':
