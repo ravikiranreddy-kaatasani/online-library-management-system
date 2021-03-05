@@ -13,17 +13,17 @@ CREATE TABLE 'user' (
   'mail_id' varchar(45) NOT NULL,
   'password' varchar(45) NOT NULL,
   'is_admin_flag' int(1) NOT NULL DEFAULT '0',
-  'total_fine' int(3) NOT NULL DEFAULT '0',
   'number_of_books_taken' int(1) NOT NULL DEFAULT '0',
+  'total_fine' int(3) NOT NULL DEFAULT '0',
   PRIMARY KEY ('user_id'),
   UNIQUE KEY 'mail_id_UNIQUE' ('mail_id')
 ); 
 
 CREATE TABLE 'user_book_taken' (
   'user_id' varchar(45) NOT NULL,
-  'book_id' int(11) NOT NULL,
-  'mail_id' varchar(45) NOT NULL,
   'user_name' varchar(45) NOT NULL,
+  'mail_id' varchar(45) NOT NULL,  
+  'book_id' int(11) NOT NULL,
   'book_name' varchar(45) NOT NULL,
   'book_author' varchar(45) NOT NULL,
   'genre' varchar(45) NOT NULL,
@@ -41,8 +41,8 @@ CREATE TABLE 'user_book_taken' (
 CREATE TABLE 'request_issue_return' (
   'user_id_no' varchar(45) NOT NULL,
   'book_id_no' int(11) NOT NULL,
-  'request_issue' date DEFAULT NULL,
-  'request_return' date DEFAULT NULL,
+  'request_issue_date' date DEFAULT NULL,
+  'request_return_date' date DEFAULT NULL,
   KEY 'user_id_no_idx' ('user_id_no'),
   KEY 'book_id_no_idx' ('book_id_no'),
   CONSTRAINT 'book_id_no' FOREIGN KEY ('book_id_no') REFERENCES 'book' ('book_id'),
