@@ -62,6 +62,7 @@ SOFTWARE REQUIREMENT SPECIFICATION
       NON FUNCTIONAL REQUIREMENTS:
       
           Product Requirements
+         
          EFFICIENCY REQUIREMENT:
          -----------------------
             When a library management system will be implemented librarian and user will easily acess library as searching and book transaction will be very faster .
@@ -69,12 +70,14 @@ SOFTWARE REQUIREMENT SPECIFICATION
          RELIABILITY REQUIREMENT:
          ------------------------
             The system should accurately performs member registration ,member validation , report generation, book transaction and search
+            
          USABILITY REQUIREMENT:
          ----------------------
             The system is designed for a user friendly environment so that student and staff of library can perform the various tasks easily and in an effective way.
       
       ORGANIZATIONAL REQUIREMENT:
       ---------------------------
+      
          IMPLEMENTATION REQUIREMNTS:
          ---------------------------
             In implementing whole system it uses html in front end with php as server side scripting language which will be used for database connectivity and the backend ie the database part is developed using mysql.
@@ -83,59 +86,93 @@ SOFTWARE REQUIREMENT SPECIFICATION
          ----------------------
             The whole system is expected to be delivered in six months of time with a weekly evaluation by the project guide.
 
-   FUNCTIONAL REQUIREMENTS
+      FUNCTIONAL REQUIREMENTS
    
-      1. NORMAL USER
+         1. NORMAL USER
      
-         1.1 USER LOGIN
+            1.1 USER LOGIN
         
-            Description of feature:
-            -----------------------
-               This feature used by the user to login into system. They are required to enter user id and password before they are allowed to enter the system .The user id and password will be verified and if invalid id is there user is allowed to not enter the system. 
+               Description of feature:
+               -----------------------
+                  This feature used by the user to login into system. They are required to enter user id and password before they are allowed to enter the system .The user id and password will be verified and if invalid id is there user is allowed to not enter the system. 
                
-            Functional requirements:
-            -------------------------
-               -user id is provided when they register
-               -The system must only allow user with valid id and password to enter the system
-               -The system performs authorization process which decides what user level can acess to.
-               -The user must be able to logout after they finished using system.
+               Functional requirements:
+               -------------------------
+                  -user id is provided when they register
+                  -The system must only allow user with valid id and password to enter the system
+                  -The system performs authorization process which decides what user level can acess to.
+                  -The user must be able to logout after they finished using system.
                
-         1.2 REGISTER NEW USER
+            1.2 REGISTER NEW USER
         
-            Description of feature:
-            -----------------------
-               This feature can be performed by all users to register new user to create account.
+               Description of feature:
+               -----------------------
+                  This feature can be performed by all users to register new user to create account.
                
-            Functional requirements:
-            -------------------------
-               -System must be able to verify information
-               -System must be able to delete information if information is wrong
+               Functional requirements:
+               -------------------------
+                  -System must be able to verify information
+                  -System must be able to delete information if information is wrong
                
-         1.3 REGISTER NEW BOOK:
+            1.3 REGISTER NEW BOOK:
          
-            Description of feature:
-            -----------------------
-               This feature allows to add new books to the library.
+               Description of feature:
+               -----------------------
+                  This feature allows to add new books to the library.
                
-            Functional requirements:
-            -------------------------
-               - System must be able to verify information
-               - System must be able to enter number of copies into table.
-               - System must be able to not allow two books having same book id.
+               Functional requirements:
+               -------------------------
+                  - System must be able to verify information
+                  - System must be able to enter number of copies into table.
+                  - System must be able to not allow two books having same book id.
             
-         1.4 SEARCH BOOK:
+            1.4 SEARCH BOOK:
          
-            DESCRIPTION OF FEATURE:
-            ------------------------
-               This feature is found in book maintenance part . we can search book based on book id , book name , publication or by author name.
+               DESCRIPTION OF FEATURE:
+               ------------------------
+                  This feature is found in book maintenance part . we can search book based on book id , book name , publication or by author name.
                
-            Functional requirements:
-            ------------------------
-               - System must be able to search the database based on select search type
-               - System must be able to filter book based on keyword enterd
-               - System must be able to show the filtered book in table view
-               
-            Functional requirements:
-            ------------------------
-               -System should be able to add detailed information about events .
-               -System should be able to display information on notice board available in the homepage of site.      
+               Functional requirements:
+               ------------------------
+                  - System must be able to search the database based on select search type
+                  - System must be able to filter book based on keyword enterd
+                  - System must be able to show the filtered book in table view
+   
+   SOFTWARE AND HARDWARE REQUIREMENTS:
+   
+      This section describes the software and hardware requirements of the system.
+      
+      SOFTWARE REQUIREMENTS:
+      -----------------------
+          Operating system- Windows 7 is used as the operating system as it is stable and supports more features and is more user friendly
+          Database MYSQL-MYSQL is used as database as it easy to maintain and retrieve records by simple queries which are in English language which are easy to understand and easy to write.
+          Development tools and Programming language- Python.
+         
+      HARDWARE REQUIREMENTS:
+      -----------------------
+          Intel core i3 is used as a processor because it is fast than other processors an provide reliable and stable and we can run our pc for longtime. By using this processor we can keep on developing our project without any worries.
+          Ram 1 gb is used as it will provide fast reading and writing capabilities and will in turn support in processing. 
+     
+   Existing System:
+   -----------------
+       Early days Libraries are managed manually. It required lot of time to record or to retrieve the details. The employees who have to record the details must perform their job very carefully. Even a small mistake would create a lot of problems. Security of information is very less. Report generations of all the information is very tough task.
+       Maintenance of Library catalogue and arrangement of the books to the catalogue is very complex task. In addition to its maintenance of member details, issue dates and return dates etc. manually is a complex task.
+       All the operations must be performed in perfect manner for the maintenance of the library with out any degradation which may finally result in the failure of the entire system. 
+         
+   Proposed System:
+   -----------------
+      To solve the inconveniences as mentioned in the existing system, an Online Library is proposed. The proposed system contains the following features:
+      
+          The students will register them through Online
+          Individually each member will have his account through which he can access the information he needs.
+          Book details like authors, number of copies totally maintained by library, present available number of books, reference books, non-reference books etc. all this information can be made handy. 
+          Regarding the members designation, number of books was issued.
+          Issue dates and returns of each member is maintained separately and fine charged if there is any delay in returning the book
+          Administrator can add, update the books.
+          Member can request extend the return the date of the particular book bfore the actual return date, if he wants.
+          Time consuming is low, gives accurate results, reliability can be improved with the help of security.
+       
+CONCLUSION & FUTURE SCOPE:
+--------------------------
+   This website provides a computerized version of library management system which will benefit the students/employees as well as the staff of the library.
+   It makes entire process online where student/employee can search books, admin can generate reports and do book transactions. It also has a facility for student/employee login where student can login and can see status of books issued as well request for book.
