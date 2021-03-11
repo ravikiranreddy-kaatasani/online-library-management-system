@@ -119,8 +119,8 @@ SOFTWARE REQUIREMENT SPECIFICATION
                
             Functional requirements:
             -------------------------
-               -System must be able to verify information
-               -System must be able to enter number of copies into table.
+               - System must be able to verify information
+               - System must be able to enter number of copies into table.
                - System must be able to not allow two books having same book id.
             
          1.4 SEARCH BOOK:
