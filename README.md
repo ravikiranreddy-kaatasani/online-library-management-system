@@ -28,16 +28,16 @@ PROBLEM STATEMENT:
 The problem occurred before having computerized system includes:
 
  File lost:
-------------
    When computerized system is not implemented file is always lost because of human environment.Some times due to some human error there may be a loss of records.
+
  File damaged:
----------------
    When a computerized system is not there file is always lost due to some accdent like spilling of water by some member on file accidentally. Besides some natural disaster like floods or fires may also damage the files.
- Difficult to search record
+   
+ Difficult to search record:
    When there is no computerized system there is always a difficulty in searching of records if the records are large in number .
+   
  Space consuming:
-------------------
    After the number of records become large the space for physical storage of file and records also increases if no computerized system is implemented.
+
  Cost consuming:
-------------------
    As there is no computerized system the to add each record paper will be needed which will increase the cost for the management of library.
