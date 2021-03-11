@@ -8,7 +8,7 @@ def user_info():
       try:
           cursor.execute("select user_id,user_name,number_of_books_taken,total_fine from user")#Execute SQL Query to select all record   
           result=cursor.fetchall() #fetches all the rows in a result set
-          table = BeautifulTable()
+          table = BeautifulTable(maxwidth=200)
           table.column_headers = ["UserId", "UserName", "BooksTaken", "TotalFine"]
           for i in result:
               table.append_row(i)
@@ -40,7 +40,7 @@ def user_info():
 def user_input_1():
     uid=(input("\nEnter user_id: "))
     cursor.execute("select u.user_id,ubt.user_name,ubt.book_id,b.book_name,ubt.genre,ubt.book_author,ubt.issue_date,ubt.actual_return_date,ubt.user_return_date,ubt.fine from user_book_taken ubt join book b on b.book_id=ubt.book_id join user u on ubt.user_id=u.user_id where u.user_id='%s'"%(uid))#Execute SQL Query to select all record 
-    table1 = BeautifulTable()
+    table1 = BeautifulTable(maxwidth=200)
     table1.column_headers = ["UserID", "UserName", "BookID", "BookName", "Genre", "BookAuthor", "IssueDate", "ActualReturnDate", "UserReturnDate", "Fine"]
     result1=cursor.fetchall() #fetches all the rows in a result1 set
     if result1:
@@ -62,7 +62,7 @@ def user_input_2():
     umail=input("Enter User Mail Id: ")
     umm ="'"+umail+"'"
     cursor.execute("select u.user_id,ubt.user_name,ubt.book_id,b.book_name,ubt.genre,ubt.book_author,ubt.issue_date,ubt.actual_return_date,ubt.user_return_date,ubt.fine from user_book_taken ubt join book b on ubt.book_id=b.book_id join user u on ubt.user_id=u.user_id where ubt.mail_id="+umm+"")#Execute SQL Query to select all record 
-    table2 = BeautifulTable()
+    table2 = BeautifulTable(maxwidth=200)
     table2.column_headers = ["UserID", "UserName", "BookID", "BookName", "Genre", "BookAuthor", "IssueDate", "ActualReturnDate", "UserReturnDate", "Fine"]
     result1=cursor.fetchall() #fetches all the rows in a result1 set            
     if result1:
