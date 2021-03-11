@@ -58,7 +58,9 @@ SOFTWARE REQUIREMENT SPECIFICATION
          Librarian will be able to provide a detailed description of workshops going in the college as well as in nearby colleges.
          
    SYSTEM REQUIREMENTS
-      NON FUNCTIONAL REQUIREMENTS
+   
+      NON FUNCTIONAL REQUIREMENTS:
+      
           Product Requirements
          EFFICIENCY REQUIREMENT:
          -----------------------
@@ -82,31 +84,39 @@ SOFTWARE REQUIREMENT SPECIFICATION
             The whole system is expected to be delivered in six months of time with a weekly evaluation by the project guide.
 
    FUNCTIONAL REQUIREMENTS
+   
       1. NORMAL USER
+     
          1.1 USER LOGIN
+        
             Description of feature:
             -----------------------
                This feature used by the user to login into system. They are required to enter user id and password before they are allowed to enter the system .The user id and password will be verified and if invalid id is there user is allowed to not enter the system. 
+               
             Functional requirements:
             -------------------------
                -user id is provided when they register
                -The system must only allow user with valid id and password to enter the system
                -The system performs authorization process which decides what user level can acess to.
                -The user must be able to logout after they finished using system.
+               
          1.2 REGISTER NEW USER
         
             Description of feature:
             -----------------------
                This feature can be performed by all users to register new user to create account.
+               
             Functional requirements:
             -------------------------
                -System must be able to verify information
                -System must be able to delete information if information is wrong
+               
          1.3 REGISTER NEW BOOK:
          
             Description of feature:
             -----------------------
-               This feature allows to add new books to the library
+               This feature allows to add new books to the library.
+               
             Functional requirements:
             -------------------------
                -System must be able to verify information
@@ -118,11 +128,13 @@ SOFTWARE REQUIREMENT SPECIFICATION
             DESCRIPTION OF FEATURE:
             ------------------------
                This feature is found in book maintenance part . we can search book based on book id , book name , publication or by author name.
+               
             Functional requirements:
             ------------------------
                - System must be able to search the database based on select search type
                - System must be able to filter book based on keyword enterd
                - System must be able to show the filtered book in table view
+               
             Functional requirements:
             ------------------------
                -System should be able to add detailed information about events .
