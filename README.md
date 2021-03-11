@@ -44,11 +44,16 @@ SOFTWARE REQUIREMENT SPECIFICATION
          As there is no computerized system the to add each record paper will be needed which will increase the cost for the management of library.
     
    SYSTEM OBJECTIVES
+   
        Improvement in control and performance. 
          The system is developed to cope up with the current issues and problems of library. The system can add user, validate user and is also bug free.
+         
        Save cost
          After computerized system is implemented less human force will be requiredxto maintain the library thus reducing the overall cost.
+         
        Save time
          Librarian is able to search record by using few clicks of mouse and few search keywords thus saving his valuable time.
+         
        Option of online Notice board
-         Librarian will be able to provide a detailed description of workshops going in the college as well as in nearby colleges
+         Librarian will be able to provide a detailed description of workshops going in the college as well as in nearby colleges.
+         
