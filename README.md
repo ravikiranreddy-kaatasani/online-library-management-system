@@ -46,7 +46,7 @@ SOFTWARE REQUIREMENT SPECIFICATION
    SYSTEM OBJECTIVES
    
        Improvement in control and performance. 
-         The system is developed to cope up with the current issues and problems of library. The system can add user, validate user and is also bug free.
+         The system is developed to cope up with the current issues and problems of library. The system can validate user and is also bug free.
          
        Save cost
          After computerized system is implemented less human force will be requiredxto maintain the library thus reducing the overall cost.
