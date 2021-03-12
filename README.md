@@ -54,8 +54,6 @@ SOFTWARE REQUIREMENT SPECIFICATION
        Save time
          Librarian is able to search record by using few clicks of mouse and few search keywords thus saving his valuable time.
          
-       Option of online Notice board
-         Librarian will be able to provide a detailed description of workshops going in the college as well as in nearby colleges.
          
    SYSTEM REQUIREMENTS
    
