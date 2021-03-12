@@ -96,7 +96,6 @@ def to_extend():
 
             query = "update user_book_taken set extend_request_date = %s weher book_id = %s and user_id = %s and user_return_date is not NULL;"
             cursor.execute(query,(extend_date,user_id,book_id))
-            conn.commit()
             
             mydb.commit()
             send_mail()
