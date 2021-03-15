@@ -1,0 +1,58 @@
+create database library;
+
+use library;
+
+CREATE TABLE `book` (
+  `book_id` int(11) NOT NULL,
+  `book_name` varchar(45) NOT NULL,
+  `book_author` varchar(45) NOT NULL,
+  `genre` varchar(45) NOT NULL,
+  `number_of_copies` int(11) NOT NULL DEFAULT '1',
+  PRIMARY KEY (`book_id`)
+);
+
+CREATE TABLE `user` (
+  `user_id` varchar(45) NOT NULL,
+  `user_name` varchar(45) NOT NULL,
+  `mail_id` varchar(45) NOT NULL,
+  `password` varchar(45) NOT NULL,
+  `is_admin_flag` int(1) NOT NULL DEFAULT '0',
+  `total_fine` int(3) NOT NULL DEFAULT '0',
+  `number_of_books_taken` int(1) NOT NULL DEFAULT '0',
+  PRIMARY KEY (`user_id`),
+  UNIQUE KEY `mail_id_UNIQUE` (`mail_id`)
+); 
+
+CREATE TABLE `user_book_taken` (
+  `user_id` varchar(45) NOT NULL,
+  `user_name` varchar(45) NOT NULL,
+  `mail_id` varchar(45) NOT NULL,
+  `book_id` int(11) NOT NULL,
+  `book_name` varchar(45) NOT NULL,
+  `genre` varchar(45) NOT NULL,
+  `book_author` varchar(45) NOT NULL,
+  `request_issue_date` date DEFAULT NULL,
+  `request_return_date` date DEFAULT NULL,
+  `issue_date` date DEFAULT NULL,
+  `actual_return_date` date DEFAULT NULL,
+  `user_return_date` date DEFAULT NULL,
+  `fine` int(3) NOT NULL DEFAULT '0',
+  KEY `user_id_idx` (`user_id`),
+  KEY `book_id_idx` (`book_id`),
+  CONSTRAINT `book_id` FOREIGN KEY (`book_id`) REFERENCES `book` (`book_id`),
+  CONSTRAINT `user_id` FOREIGN KEY (`user_id`) REFERENCES `user` (`user_id`)
+); 
+
+
+CREATE TABLE `request_issue_return` (
+  `user_id_no` varchar(45) NOT NULL,
+  `book_id_no` int(11) NOT NULL,
+  `request_issue_date` date DEFAULT NULL,
+  `request_return_date` date DEFAULT NULL,
+  KEY `user_id_no_idx` (`user_id_no`),
+  KEY `book_id_no_idx` (`book_id_no`),
+  CONSTRAINT `book_id_no` FOREIGN KEY (`book_id_no`) REFERENCES `book` (`book_id`),
+  CONSTRAINT `user_id_no` FOREIGN KEY (`user_id_no`) REFERENCES `user` (`user_id`)
+);
+
+
